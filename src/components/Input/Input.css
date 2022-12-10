@@ -1,0 +1,30 @@
+.input {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 8px;
+  padding: 8px;
+}
+.inputWithIcon {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.small_input {
+  height: 16px;
+  font-size: var(--medium-font);
+}
+.medium_input {
+  height: 19px;
+  font-size: var(--medium-font);
+}
+.large_input {
+  height: 22px;
+  font-size: var(--large-font);
+}
