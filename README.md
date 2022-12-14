@@ -135,7 +135,7 @@ export default {
   title: "Elements/Button",
   // this is the component we want to build stories for
   component: Button,
-  // two tasks:
+  // these args have two tasks:
   // 1. defines the default of the component
   ///// this can be changed on the component dierectly (see Primary - which is changing the children element)
   // 2. these will create interactable fields in Storybook (e.g. you can change the text on the button within the Storybook UI)
@@ -145,14 +145,17 @@ export default {
   },
 };
 
+//👇 We create a “template” of how args map to rendering
 const Template = (args) => <Button {...args} />;
 
+//Template.bind({}) is a standard JavaScript technique for making a copy of a function. We copy the Template so each exported story can set its own properties on it.
 export const Primary = Template.bind({});
 Primary.args = {
   variant: "primary",
-  children: "primary button",
+  children: "primary button", //here we change the default value for the Primary button
 };
 
+//each story get an own copy and we assign different arguments to it
 export const Secondary = Template.bind({});
 Secondary.args = {
   variant: "secondary",
