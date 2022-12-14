@@ -1,7 +1,6 @@
 import React from "react";
 import { Primary } from "../Button/Button.stories";
 import { StandardInput } from "../Input/Input.stories";
-import * as PropTypes from "prop-types";
 
 export default {
   title: "Components/Forms",

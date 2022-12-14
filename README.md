@@ -172,8 +172,52 @@ Danger.args = {
 };
 ```
 
+## Building composite components
+
+- Storybook let's you easily combine components to visualize and use within your application
+- For this you don't need to (but you still could) use a .css file and you don't need to build a component
+- everything is done in the .stories.js file
+- I implemented Forms.stories.js as an example
+
+```js
+import React from "react";
+//import the stories you want to use in this story
+import { Primary } from "../Button/Button.stories";
+import { StandardInput } from "../Input/Input.stories";
+
+//add title and args
+export default {
+  title: "Components/Forms",
+  args: {
+    children: "+ add element",
+    sizeInput: "small_input",
+    sizeButton: "small_button",
+  },
+};
+
+// here I wanted to show that you can easily add functionality to your stories
+function handleClick(e) {
+  e.preventDefault();
+  console.log("hello");
+}
+
+// build your story
+export const addElementsForm = ({ children, sizeInput, sizeButton }) => (
+  <form>
+    <StandardInput size={sizeInput} />
+    <Primary size={sizeButton} onClick={handleClick}>
+      {children}
+    </Primary>
+  </form>
+);
+```
+
 ## Videos and docs I followed
 
 - Official Storybook documentation - https://storybook.js.org/docs/react/writing-stories/introduction
 - How to connect props with Storybook controls - https://www.youtube.com/watch?v=vAh0KdRcXpI
 - https://www.youtube.com/watch?v=FUKpWgRyPlU
+
+## Remarks
+
+Of cause there are multiple ways on how to implement stories. This was the most straight forward way to do it for me. Please feel free to give feedback - share what you learn when facing issues etc.
