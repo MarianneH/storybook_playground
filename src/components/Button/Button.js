@@ -20,6 +20,7 @@ function Button(props) {
     </button>
   );
 }
+
 Button.propTypes = {
   size: PropTypes.oneOf(["small_button", "medium_button", "large_button"]),
 };
