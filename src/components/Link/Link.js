@@ -1,12 +1,13 @@
 import React from "react";
-import "./Link.css";
+import styles from "./Link.module.css";
 import "../../App.css";
 import * as PropTypes from "prop-types";
 
 function Link(props) {
   const { size = "medium_link", children = "Click here", ...rest } = props;
+
   return (
-    <a className={`link ${size}`} {...rest}>
+    <a className={`${styles.link} ${styles[size]}`} {...rest}>
       {children}
     </a>
   );

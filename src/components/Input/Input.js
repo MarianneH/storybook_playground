@@ -1,5 +1,5 @@
 import React from "react";
-import "./Input.css";
+import styles from "./Input.module.css";
 import "../../App.css";
 
 function Input(props) {
@@ -7,7 +7,7 @@ function Input(props) {
   return (
     <input
       type="text"
-      className={`input ${size}`}
+      className={`${styles.input} ${styles[size]}`}
       {...rest}
       placeholder={size}
     />

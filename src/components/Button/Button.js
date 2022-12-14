@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import styles from "./Button.module.css";
 import "../../App.css";
 import * as PropTypes from "prop-types";
 
@@ -12,7 +12,10 @@ function Button(props) {
   } = props;
 
   return (
-    <button className={`button ${variant} ${size}`} {...rest}>
+    <button
+      className={`${styles.button} ${styles[variant]} ${styles[size]}`}
+      {...rest}
+    >
       {children}
     </button>
   );
