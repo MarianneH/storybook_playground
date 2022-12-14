@@ -1,6 +1,6 @@
 import React from "react";
 import plus from "../../assets/plus.svg";
-import "./ServiceElement.css";
+import styles from "./ServiceElement.module.css";
 import "../../App.css";
 
 function ServiceElement(props) {
@@ -11,14 +11,14 @@ function ServiceElement(props) {
     ...rest
   } = props;
   return (
-    <div className="service_container">
-      <div className="serviceName">{name}</div>
-      <div className="serviceRight">
-        <div className="serviceDetails">
-          <div className="servicePrice">{price}</div>
-          <div className="serviceDuration">{duration}</div>
+    <div className={styles.service_container}>
+      <div className={styles.serviceName}>{name}</div>
+      <div className={styles.serviceRight}>
+        <div className={styles.serviceDetails}>
+          <div className={styles.servicePrice}>{price}</div>
+          <div className={styles.serviceDuration}>{duration}</div>
         </div>
-        <div className="addImage">
+        <div className={styles.addImage}>
           <img src={plus} alt="add" />
         </div>
       </div>
