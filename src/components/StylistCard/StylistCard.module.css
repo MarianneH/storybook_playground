@@ -24,8 +24,8 @@
 
 .stylistCard img {
   background-color: red;
-  width: 200px;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
   border-radius: 50%;
 }
 
@@ -33,5 +33,6 @@
   .stylistCard {
     flex-direction: column;
     text-align: center;
+    width: 25%;
   }
 }
