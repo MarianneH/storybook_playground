@@ -13,9 +13,30 @@ function App() {
   return (
     <p>
       Cleanedup React App
-      <Button variant="primary" onClick={handleClick} icon={calendar}>
-        Book Appointment
-      </Button>
+      <div>
+        Primary Button{" "}
+        <Button variant="primary" onClick={handleClick} icon={calendar}>
+          Book Appointment
+        </Button>
+      </div>
+      <div>
+        Secondary Button small{" "}
+        <Button variant="secondary" size="small" onClick={handleClick}>
+          Sign In
+        </Button>
+      </div>
+      <div>
+        Danger Button xsmall{" "}
+        <Button variant="danger" size="xsmall" onClick={handleClick}>
+          Delete
+        </Button>
+      </div>
+      <div>
+        Invisible Button{" "}
+        <Button variant="invisible" size="small" onClick={handleClick}>
+          Log In
+        </Button>
+      </div>
       <ServiceElement
         duration="60 mins"
         name="Tanzen, Schneiden, Stylen"

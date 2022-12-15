@@ -8,6 +8,7 @@ export default {
   args: {
     children: "button",
     size: "medium",
+    icon: "",
   },
 };
 
