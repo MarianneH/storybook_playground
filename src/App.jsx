@@ -13,7 +13,7 @@ function App() {
   return (
     <p>
       Cleanedup React App
-      <Button variant="invisible" onClick={handleClick} icon={calendar}>
+      <Button variant="primary" onClick={handleClick} icon={calendar}>
         Book Appointment
       </Button>
       <ServiceElement

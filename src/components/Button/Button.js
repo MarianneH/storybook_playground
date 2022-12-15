@@ -17,13 +17,8 @@ function Button(props) {
       className={`${styles.button} ${styles[variant]} ${styles[size]}`}
       {...rest}
     >
-      {icon ? (
-        <>
-          <img src={icon} alt="icon" className={styles.icon} /> {children}
-        </>
-      ) : (
-        { children }
-      )}
+      {icon && <img src={icon} alt="icon" className={styles.icon} />}
+      {children}
     </button>
   );
 }
