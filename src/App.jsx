@@ -4,6 +4,7 @@ import Button from "./components/Button/Button";
 import ServiceElement from "./components/ServiceElement/ServiceElement";
 import InfoElement from "./components/InfoElement/InfoElement";
 import internet from "./assets/internet.svg";
+import calendar from "./assets/calendar.svg";
 
 function App() {
   function handleClick() {
@@ -12,8 +13,8 @@ function App() {
   return (
     <p>
       Cleanedup React App
-      <Button variant="danger" onClick={handleClick}>
-        delete
+      <Button variant="invisible" onClick={handleClick} icon={calendar}>
+        Book Appointment
       </Button>
       <ServiceElement
         duration="60 mins"
