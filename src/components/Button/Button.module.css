@@ -10,7 +10,7 @@
 }
 .icon {
   padding-right: 8px;
-  width: 14px;
+  height: var(--medium-font);
   filter: var(--icon-filter-white);
 }
 .medium {
