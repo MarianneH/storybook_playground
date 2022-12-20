@@ -2,8 +2,12 @@
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  margin: 8px;
-  padding: 8px;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.input:hover {
+  border: 1px solid #4e42d4;
 }
 .inputWithIcon {
   background-color: white;
@@ -16,15 +20,17 @@
 .input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }
+
 .small_input {
-  height: 16px;
+  width: 30%;
   font-size: var(--medium-font);
 }
 .medium_input {
-  height: 19px;
+  width: 600px;
   font-size: var(--medium-font);
 }
 .large_input {
-  height: 22px;
-  font-size: var(--large-font);
+  width: 600px;
+  height: 200px;
+  font-size: var(--medium-font);
 }
