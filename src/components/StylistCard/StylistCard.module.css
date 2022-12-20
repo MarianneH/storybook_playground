@@ -16,7 +16,6 @@
 
 .stylistCard div {
   padding: 1rem;
-  width: 70%;
 }
 .stylistCard h3 {
   color: var(--secondary-font);
@@ -25,7 +24,7 @@
 .stylistCard img {
   background-color: red;
   min-width: 200px;
-  min-height: 200px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
 }
 
